@@ -17,6 +17,10 @@ main() {
 
   bool b1 = 1 == '1';
   print(b1);
+
+  print(haHa());
+  var ma = makeAdder(2);
+  print(ma(2));
 }
 
 void object_test() {
@@ -38,6 +42,14 @@ void object_test() {
 void const_test() {
   final c1 = 'hello world';
   const c2 = '你好';
+}
+
+String haHa() => '哈哈';
+
+/// Returns a function that adds [addBy] to the
+/// function's argument.
+Function makeAdder(num addBy) {
+  return (num i) => addBy + i;
 }
 
 // /Users/lipeng/development/flutter/bin/cache/dart-sdk/bin/dart basec_data_type.dart

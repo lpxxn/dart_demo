@@ -4,7 +4,6 @@ main() {
   String name = getName();
   print(name);
 
-
   print(add(1, 2));
   print(add(1, 3, 5));
 
@@ -23,8 +22,8 @@ void list() {
   print(l2.last);
   print(l2[2]);
 
-  l1.forEach((x){
-      print("l1: " + x.toString());
+  l1.forEach((x) {
+    print("l1: " + x.toString());
   });
 }
 
@@ -34,7 +33,7 @@ void map_test() {
 
   Map m2 = new Map();
   m2[1] = 'ab';
-  m2['y']= 'cd';
+  m2['y'] = 'cd';
 
   print(m2.containsKey(1));
   print(m2.containsKey('y'));
